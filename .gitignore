@@ -7,21 +7,4 @@ yarn.lock
 cypress/videos/
 cypress/screenshots/
 cypress/downloads/
-cypress/reports/
-
-# Environment Variables (local configuration)
-cypress.env.json
-.env
-.env.local
-.env.*.local
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# System
-Thumbs.db
+cypress/reports/*
