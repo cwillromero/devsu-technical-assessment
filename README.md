@@ -27,11 +27,7 @@ cd devsu_assessment
 npm install
 ```
 
-3. Configure environment variables (optional)
-
-Environment variables are defined in the `env` object inside `cypress.config.js`. The default configuration is compatible with https://www.saucedemo.com/. To modify URLs for different environments, edit the `env` object in `cypress.config.js`.
-
-4. Verify Cypress installation
+3. Verify Cypress installation
 
 ```bash
 npx cypress --version
