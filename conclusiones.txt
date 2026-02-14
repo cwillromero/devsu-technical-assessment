@@ -1,0 +1,23 @@
+1) Resumen general
+- Proyecto: Framework de pruebas con Cypress (E2E + API).
+- Objetivo: Implementar pruebas E2E para https://www.saucedemo.com/ y pruebas API para https://petstore.swagger.io/.
+
+2) Ejercicio E2E (SauceDemo)
+- Alcance: Autenticación, agregar 2 productos al carrito, checkout completo y verificación de "THANK YOU FOR YOUR ORDER".
+- Hallazgos:
+  - Flujo principal (happy path) automatizado correctamente usando Page Object Model.
+  - Datos de prueba centralizados en `cypress/fixtures/test-data.json` para facilitar mantenimiento.
+  - Comandos globales mínimos; la mayoría de la lógica UI reside en Page Objects (`cypress/support/pages`).
+- Conclusión: Pruebas E2E estables y mantenibles; buena separación entre datos, acciones y verificaciones.
+
+3) Ejercicio API (PetStore)
+- Alcance: Crear usuario, obtener, actualizar nombre/email, obtener actualizado, eliminar y verificar eliminación.
+- Hallazgos:
+  - Tests implementados en `cypress/api/petstore.cy.js` usando helper `cy.apiRequest()` (centraliza `API_BASE_URL`).
+  - Datos parametrizados mediante fixtures (`cypress/fixtures/petstore-data.json`) y generación de usernames únicos para evitar colisiones.
+  - Manejo explícito de códigos de respuesta y control de `failOnStatusCode` para escenarios negativos.
+- Conclusión: Pruebas API replicables y seguras; estructura lista para extender con casos negativos y validaciones de esquema.
+
+4) Configuración y seguridad
+- `cypress.config.js` centraliza `env` (E2E y API) y controla `baseUrl` para E2E.
+- `allowCypressEnv` fue deshabilitado para mejorar seguridad (evita exposición de envvars al navegador).

@@ -17,7 +17,7 @@ This project provides an end-to-end (E2E) and API automation framework built wit
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/cwillromero/devsu-technical-assessment
 cd devsu_assessment
 ```
 
