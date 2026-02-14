@@ -1,0 +1,30 @@
+{
+  "users": {
+    "standard": {
+      "username": "standard_user",
+      "password": "secret_sauce"
+    }
+  },
+  "customers": {
+    "customer1": {
+      "firstName": "Carlos",
+      "lastName": "Romero",
+      "postalCode": "33126"
+    },
+    "customer2": {
+      "firstName": "Wilfredo",
+      "lastName": "Maradiaga",
+      "postalCode": "33125"
+    }
+  },
+  "products": {
+    "backpack": "Sauce Labs Backpack",
+    "bikeLight": "Sauce Labs Bike Light",
+    "tShirt": "Sauce Labs Bolt T-Shirt",
+    "fleecejacket": "Sauce Labs Fleece Jacket"
+  },
+  "messages": {
+    "orderConfirmation": "Thank you for your order!",
+    "orderSuccess": "Your order has been dispatched"
+  }
+}

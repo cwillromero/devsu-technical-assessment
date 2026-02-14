@@ -1,0 +1,12 @@
+{
+  "user": {
+    "firstName": "Carlos",
+    "lastName": "Romero",
+    "password": "Pass123!",
+    "phone": "555-1234",
+    "userStatus": 0
+  },
+  "updated": {
+    "firstName": "Wilfredo"
+  }
+}
